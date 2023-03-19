@@ -33,32 +33,73 @@ main {
 }
 
 .menu__lista {
+  position: relative;
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
 .menu__item {
-  display: flex;
-  text-decoration: none;
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  margin: 3.5rem 3rem 0 7rem;
+  transform: rotate(-30deg) skew(25deg);
+  background: #ccc;
 }
 
-.menu__link {
-  text-decoration: none;
-  padding-top: .5rem;
-  padding-right: 4rem;
-  margin-left: -1.9rem;
-  color: black;
-  font-size: 1rem;
-}
 
 .menu__link:hover {
   cursor: pointer;
-  color: blue;
 }
 
-.icono__enlace {
-  font-size: 1rem;
-  color: black;
-  text-shadow: 0px 1px 1px black;
+.menu__lista li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transition: 0.5s;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px !important;
+}
+
+.menu__lista li:hover span {
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, .1);
+}
+
+.menu__lista li:hover span:nth-child(5) {
+  transform: translate(40px, -40px);
+  opacity: 1;
+}
+
+.menu__lista li:hover span:nth-child(4) {
+  transform: translate(30px, -30px);
+  opacity: .8;
+}
+
+.menu__lista li:hover span:nth-child(3) {
+  transform: translate(20px, -20px);
+  opacity: .6;
+}
+
+.menu__lista li:hover span:nth-child(2) {
+  transform: translate(10px, -10px);
+  opacity: .4;
+}
+
+.menu__lista li:hover span:nth-child(1) {
+  transform: translate(0, 0);
+  opacity: .2;
+}
+
+.menu__lista li:nth-child(2) span {
+  background: #0077B5;
 }
 
 .logo__perfil {
