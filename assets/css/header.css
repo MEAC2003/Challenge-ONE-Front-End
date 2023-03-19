@@ -1,0 +1,102 @@
+header {
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+  padding: .5rem 2rem .5rem 2rem;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner__imagen {
+  width: 2rem;
+}
+
+.banner__nombre {
+  padding-left: .5rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.navbar-nav {
+  padding-right: 2rem;
+}
+
+.navbar-brand {
+  padding-left: 2rem;
+}
+
+
+.nav-item {
+  margin: 1rem .6rem .6rem .6rem;
+}
+
+.nav-link {
+  color: #464646;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+}
+
+.nav-link::before,
+.nav-link::after {
+  content: '';
+  border-bottom: 2px solid #00B6F0;
+  position: absolute;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.nav-link::before {
+  bottom: -1px;
+  width: 85%;
+  right: 8px;
+}
+
+.nav-link::after {
+  bottom: -10px;
+  width: 55%;
+  left: 9px;
+}
+
+.nav-link:hover::before {
+  opacity: 1;
+  width: 65%;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+  width: 35%;
+}
+
+.nav-link.active::before,
+.nav-link.active::after {
+  border-bottom: 2px solid #00B6F0;
+  position: absolute;
+  opacity: 1;
+}
+
+.nav-link.active::after {
+  bottom: -1px;
+  width: 65%;
+  opacity: 1;
+  left: 9px;
+}
+
+.nav-link.active::before{
+  bottom: -10px;
+  width: 35%;
+  right: 8px;
+}
+
+.nav__link--negrita {
+  font-weight: bold;
+}

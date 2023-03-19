@@ -1,0 +1,168 @@
+/* General */
+main {
+  font-family: 'Raleway', sans-serif;
+}
+
+.seccion__titulo {
+  padding: 1rem 0 0 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #00B6F0;
+}
+
+/* Quien Soy */
+.descripcion {
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+}
+
+.quien {
+  padding: 4.6rem 1.5rem 4rem 4.3rem;
+}
+
+.quien__soy {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 65px;
+  color: black;
+}
+
+.quien__soy--resaltar {
+  color: #00B6F0;
+}
+
+.menu__lista {
+  display: flex;
+}
+
+.menu__item {
+  display: flex;
+  text-decoration: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  padding-top: .5rem;
+  padding-right: 4rem;
+  margin-left: -1.9rem;
+  color: black;
+  font-size: 1rem;
+}
+
+.menu__link:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.icono__enlace {
+  font-size: 1rem;
+  color: black;
+  text-shadow: 0px 1px 1px black;
+}
+
+.logo__perfil {
+  width: 330px;
+  height: 368px;
+}
+
+/* Sobre Mi */
+
+.sobre {
+  background-color: #E0F2FD;
+  padding: 4rem 0 5.5rem 0;
+}
+
+.sobre__titulo {
+  padding: 1rem 0 1rem 4.3rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #00B6F0;
+}
+
+.sobre__info {
+  padding: 0 32% 0 4.3rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 25px;
+  text-align: justify;
+  color: #464646;
+}
+
+
+.sobre .sobre__info span {
+  position: relative;
+  display: inline-block;
+}
+
+/* Skills */
+.skills__col {
+  padding: 4rem 0 5.5rem 0;
+}
+
+.skills__lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: initial;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.skill__item {
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
+  margin-top: 4rem;
+  width: 13%;
+}
+
+.skill__imagen {
+  width: 40px;
+  height: auto;
+
+}
+
+.skills__lista span {
+  padding-left: 7px;
+}
+
+/* .skill__imagen:hover {
+  transform: scale(90);
+} */
+
+/* Hobbies */
+.hobbies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0 5.5rem 0;
+}
+
+.carousel {
+  margin-top: 4rem;
+  width: 50%;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+.contenedor__imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.hobbie__imagen {
+  width: 20%;
+}
+
+/* Formacion */
+.formaciones__col {
+  padding: 4rem 0 5.5rem 0;
+}
