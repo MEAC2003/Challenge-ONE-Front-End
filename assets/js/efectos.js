@@ -43,3 +43,21 @@ animacion
     delay: anime.stagger(9),
   });
 
+window.addEventListener('scroll', function () {
+  const sections = document.querySelectorAll('.section');
+  const navLinks = document.querySelectorAll('.nav-link');
+  let currentSectionIndex = 0;
+  let closestDistance = Infinity;
+
+  sections.forEach((section, index) => {
+    const sectionRect = section.getBoundingClientRect();
+    const distanceToViewport = sectionRect.bottom - 250;
+    if (distanceToViewport < closestDistance && distanceToViewport >= -sectionRect.height) {
+      closestDistance = distanceToViewport;
+      currentSectionIndex = index;
+    }
+  });
+
+  navLinks.forEach(link => link.classList.remove('active'));
+  navLinks[currentSectionIndex].classList.add('active');
+});
