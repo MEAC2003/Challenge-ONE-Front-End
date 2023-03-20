@@ -235,7 +235,7 @@ main {
   bottom: 20px;
   background: white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
+  border-radius: 40px 0 40px 0px;
   transition: 0.5s;
 }
 
@@ -269,7 +269,7 @@ main {
 .formacion__imagen2 {
   width: 100%;
   height: auto;
-  margin: 2rem 0 0 0;
+  margin: 2.5rem 0 0 0;
 }
 
 .formaciones__tiempo {
