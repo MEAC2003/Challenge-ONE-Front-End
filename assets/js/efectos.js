@@ -11,6 +11,7 @@ navLinks.forEach(navLink => {
   });
 });
 
+
 const texto = document.querySelector('.sobre__info');
 texto.innerHTML = texto.textContent.replace(/\S/g, "<span>$&</span>");
 
@@ -60,4 +61,15 @@ window.addEventListener('scroll', function () {
 
   navLinks.forEach(link => link.classList.remove('active'));
   navLinks[currentSectionIndex].classList.add('active');
+});
+
+
+const btn = document.querySelector('.btn__Enviar');
+
+btn.addEventListener('click', function () {
+  this.classList.toggle('active');
+
+  setTimeout(() => {
+    this.classList.remove('active');
+  }, 3000);
 });
