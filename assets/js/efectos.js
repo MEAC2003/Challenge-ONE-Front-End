@@ -11,6 +11,13 @@ navLinks.forEach(navLink => {
   });
 });
 
+let typingText = new Typed("#text", {
+  strings: ["Manuel Antón"],
+  loop: true,
+  typeSpeed: 140,
+  backSpeed: 50,
+  backDelay: 1000,
+});
 
 const texto = document.querySelector('.sobre__info');
 texto.innerHTML = texto.textContent.replace(/\S/g, "<span>$&</span>");
