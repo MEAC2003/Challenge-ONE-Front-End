@@ -371,12 +371,13 @@ main {
 
 .enlace__lista {
   display: flex;
+  justify-content: center;
   margin-top: 2rem;
   list-style: none;
 }
 
 .enlace__item {
-  padding: 0 2rem 0 2rem;
+  padding: 0 4rem 0 0;
 }
 
 .enlace__link {
@@ -395,4 +396,171 @@ main {
 
 .enlace__lista .enlace__link:hover {
   color: #0077B5;
+}
+
+/* Contacto */
+.contacto__col {
+  position: relative;
+}
+
+.contacto {
+  padding: 4.8rem 0 6.5rem 0;
+}
+
+.contacto__imagen {
+  position: absolute;
+  z-index: -1;
+  top: 4.5rem;
+  right: 2rem;
+  width: 100%;
+  height: 200px;
+}
+
+.contacto__col h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 5rem;
+  color: #00B6F0;
+}
+
+.contacto__col p {
+  font-weight: 570;
+  font-size: 1rem;
+  line-height: 25px;
+  margin-left: 5rem;
+  color: #464646;
+}
+
+.contacto__info {
+  padding-top: 1rem;
+}
+
+.input__padron {
+  box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin: 15px 10px;
+  width: 45.1%;
+  height: 35px;
+}
+
+.input__padron::placeholder {
+  color: #0A3871;
+  opacity: 0.6;
+}
+
+.input__padron--texta:focus,
+.input__padron:focus {
+  border: 1px solid #c5d0d5;
+}
+
+.input__padron--modificado {
+  width: 95.5%;
+}
+
+.input__padron--texta {
+  display: block;
+  padding-top: 15px;
+  width: 95.5%;
+  margin-top: 15px;
+  margin-left: 10px;
+  box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+
+}
+
+.input__padron--texta::placeholder {
+  color: #0A3871;
+  opacity: 0.6;
+}
+
+input,
+textarea {
+  font-size: .9rem;
+  text-align: left;
+  padding-left: 15px;
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+.container__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn__Enviar {
+  padding: 10px 48px;
+  width: 31.5%;
+  background: #0096c7;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  cursor: pointer;
+  transition: .3s ease;
+  border-radius: 6px;
+  position: relative;
+  font-size: 16px;
+  margin-top: 3rem;
+}
+
+.btn__Enviar:hover {
+  background: #0096c7;
+}
+
+.btn__Enviar .icon {
+  margin-right: 14px;
+  position: relative;
+  z-index: 10;
+}
+
+.btn__Enviar.active .icon {
+  animation: animateRocket 2s ease-in-out forwards;
+}
+
+.btn__Enviar::before {
+  content: 'Enviado';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #73a942;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+  transition-delay: 1s;
+  border-radius: 6px;
+  z-index: 20;
+}
+
+.btn__Enviar.active::before {
+  width: 100%;
+}
+
+@keyframes animateRocket {
+
+  0%,
+  5% {
+    transform: rotate(0);
+    left: 0;
+  }
+
+  25% {
+    transform: rotate(45deg);
+    left: 0;
+  }
+
+  50% {
+    transform: rotate(45deg);
+    left: -48px;
+  }
+
+  100% {
+    transform: rotate(45deg);
+    left: calc(100% + 48px);
+  }
 }
