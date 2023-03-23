@@ -486,6 +486,7 @@ textarea {
 .container__btn {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .btn__Enviar {
@@ -497,6 +498,8 @@ textarea {
   color: #fff;
   font-weight: 500;
   display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   transition: .3s ease;
   border-radius: 6px;
