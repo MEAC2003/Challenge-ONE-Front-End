@@ -15,15 +15,16 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <!-- Icons Bootstrap -->
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/8d973b6232.js" crossorigin="anonymous"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@500&display=swap"
-  rel="stylesheet">
+    rel="stylesheet">
 </head>
 
 <body>
@@ -229,7 +230,7 @@
       </div>
     </section>
     <!-- Proyectos -->
-    <section id="proyectos" class="proyectos">
+    <section id="proyectos" class="proyectos section">
       <h1 class="proyectos__titulo seccion__titulo">Experiencia profesional</h1>
       <div class="container">
         <div class="row proyectos__row">
@@ -262,7 +263,7 @@
       </div>
     </section>
     <!-- Contacto -->
-    <section id="contacto" class="contacto">
+    <section id="contacto" class="contacto section">
       <div class="container">
         <div class="row">
           <div class="contacto__col col-12 col-md-6">
@@ -275,13 +276,19 @@
             <form class="contacto__info">
               <input type="text" id="nombreApellido" class="input__padron" required placeholder="Nombre">
               <input type="email" id="correoElectronico" class="input__padron" required placeholder="email@dominio.com">
-              <input type="text" id="telefono" class="input__padron input__padron--modificado" required placeholder="Asunto">
-              <textarea cols="68" rows="10" id="mensaje" class="input__padron--texta" required placeholder="Mensaje"></textarea>
+              <input type="text" id="telefono" class="input__padron input__padron--modificado" required
+                placeholder="Asunto">
+              <textarea cols="68" rows="10" id="mensaje" class="input__padron--texta" required
+                placeholder="Mensaje"></textarea>
             </form>
-            <button type="button">
-              Contacto
-              <i class="fa-solid fa-paper-plane plane-icon hide"></i>
-            </button>
+            <div class="container__btn">
+              <button class="btn__Enviar">
+                <span class="icon">
+                  <i class="fas fa-rocket"></i>
+                </span>
+                <span class="text__btn">Enviar</span>
+              </button>
+            </div>
           </div>
         </div>
     </section>
