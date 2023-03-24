@@ -46,6 +46,21 @@ header {
   position: relative;
 }
 
+.dia__noche {
+  cursor: pointer;
+}
+
+.nav__color {
+  width: 25px;
+  height: auto;
+  padding-top: .3rem;
+}
+
+.nav__color:nth-child(2),
+.banner.night .nav__color:nth-child(1) {
+  display: none;
+}
+
 .nav-link::before,
 .nav-link::after {
   content: '';
@@ -91,7 +106,7 @@ header {
   left: 9px;
 }
 
-.nav-link.active::before{
+.nav-link.active::before {
   bottom: -10px;
   width: 35%;
   right: 8px;
