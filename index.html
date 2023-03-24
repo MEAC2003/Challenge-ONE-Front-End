@@ -22,287 +22,302 @@
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@500&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <!-- Barra de navegacion -->
-    <nav class="navbar navbar-expand-md navbar-light">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-          aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-toggler">
-          <a class="navbar-brand" href="#">
-            <img src="assets/img/Group 1.svg" class="banner__imagen" alt="Logo de la Pagina">
-            <span class="banner__nombre"> Manuel Antón Cisneros</span>
-          </a>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a id="activo" class="nav-link" href="#sobreMi">Sobre mí</a>
-            </li>
-            <li class="nav-item">
-              <a id="activo" class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a id="activo" class="nav-link" href="#hobbie">Hobbies</a>
-            </li>
-            <li class="nav-item">
-              <a id="activo" class="nav-link" href="#formaciones">Formación</a>
-            </li>
-            <li class="nav-item">
-              <a id="activo" class="nav-link" href="#proyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav__link--negrita activo" href="#contacto">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <!-- Quien Soy -->
-    <section id="quien" class="section descripcion">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="quien col-12 col-lg-8">
-            <p class="quien__soy">Hola! Soy <span id="text" class="quien__soy--resaltar"></span><br>Front-End Developer</p>
-            <ul class="menu__lista">
-              <li class="menu__item">
-                <a class="menu__link" href="https://github.com/MEAC2003" target="_blank" rel="noopener noreferrer">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span class="bi bi-github icono__enlace"></span>
-                </a>
+  <section class="banner">
+    <header>
+      <!-- Barra de navegacion -->
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+            aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/Group 1.svg" class="banner__imagen" alt="Logo de la Pagina">
+              <span class="banner__nombre"> Manuel Antón Cisneros</span>
+            </a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="activo" class="nav-link" href="#sobreMi">Sobre mí</a>
               </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span class="bi bi-linkedin icono__enlace"></span>
-                </a>
+              <li class="nav-item">
+                <a id="activo" class="nav-link" href="#skills">Skills</a>
               </li>
-          </div>
-          <div class="col-12 col-lg-4">
-            <img src="assets/img/desarrollador2.svg" alt="Imagen de perfil" class="logo__perfil">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Sobre Mi -->
-    <section id="sobreMi" class="info section">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="sobre col-12">
-            <h1 class="sobre__titulo">Sobre mi</h1>
-            <p class="sobre__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit
-              velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium.
-              Suspendisse potenti. Ut semper sagittis ligula et lacinia.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper
-              dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper
-              sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Skills -->
-    <section id="skills" class="skills section">
-      <div class="conteiner__skills container-fluid">
-        <div class="row">
-          <div class="skills__col col-12">
-            <h1 class="skills__titulo seccion__titulo">Skills</h1>
-            <ul class="skills__lista">
-              <li class="skill__item"><img class="skill__imagen" src="assets/img/html5-original.png" alt="Imagen HTML">
-                <span>HTML 5 </span>
+              <li class="nav-item">
+                <a id="activo" class="nav-link" href="#hobbie">Hobbies</a>
               </li>
-              <li class="skill__item"><img class="skill__imagen" src="assets/img/css3-original.png" alt="Imagen CSS">
-                <span> CSS 3</span>
+              <li class="nav-item">
+                <a id="activo" class="nav-link" href="#formaciones">Formación</a>
               </li>
-              <li class="skill__item"><img class="skill__imagen" src="assets/img/javascript-original.png"
-                  alt="Imagen JS">
-                <span> JavaScript</span>
+              <li class="nav-item">
+                <a id="activo" class="nav-link" href="#proyectos">Proyectos</a>
               </li>
-              <li class="skill__item"><img class="skill__imagen skill__imagen--modificado"
-                  src="assets/img/react-original.png" alt="Imagen React"> <span> React</span>
+              <li class="nav-item">
+                <a class="nav-link nav__link--negrita activo" href="#contacto">Contacto</a>
               </li>
-              <li class="skill__item"><img class="skill__imagen skill__imagen--modificado"
-                  src="assets/img/bootstrap-original.png" alt="Imagen Bootstrap"> <span>Bootstrap</span> </li>
-              <li class="skill__item"><img class="skill__imagen" src="assets/img/tailwindcss.png"
-                  alt="Imagen TailwindCSS">
-                <span>TailwindCSS</span>
+              <li class="nav-item dia__noche">
+                <img class="nav__color" src="assets/img/Moon.svg" alt="mom"> <img class="nav__color"
+                  src="assets/img/Group 21.svg" alt="sun">
               </li>
-              <li class="skill__item"><img class="skill__imagen skill__imagen--modificado" src="assets/img/git.png"
-                  alt="Imagen Git"> <span>Git</span>
-              </li>
-              <li class="skill__item"><img class="skill__imagen skill__imagen--modificado" src="assets/img/figma.png"
-                  alt="Imagen Figma"> <span>Figma</span></li>
             </ul>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Hobbies -->
-    <section id="hobbie" class="hobbies section">
-      <h1 class="hobbie__titulo seccion__titulo">Hobbies</h1>
-
-      <!-- Carrusel -->
-      <div id="hobbies__carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#hobbies__carrusel" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#hobbies__carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#hobbies__carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
-            <div class="contenedor__imagen">
-              <img src="assets/img/desarrollador2.svg" class="hobbie__imagen" alt="...">
+      </nav>
+    </header>
+    <main>
+      <!-- Quien Soy -->
+      <section id="quien" class="section descripcion">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="quien col-12 col-lg-8">
+              <h2 class="quien__soy">Hola! Soy <span id="text" class="quien__soy--resaltar"></span></h2>
+              <h3 class="quien__soy">Front-End Developer</h3>
+              <ul class="menu__lista">
+                <li class="menu__item">
+                  <a class="menu__link" href="https://github.com/MEAC2003" target="_blank" rel="noopener noreferrer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="bi bi-github icono__enlace"></span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="bi bi-linkedin icono__enlace"></span>
+                  </a>
+                </li>
             </div>
-            <div class="carousel-caption">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="contenedor__imagen">
-              <img src="assets/img/desarrollador2.svg" class="hobbie__imagen" alt="...">
-            </div>
-            <div class="carousel-caption ">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="contenedor__imagen">
-              <img src="assets/img/desarrollador2.svg" class="hobbie__imagen" alt="...">
-            </div>
-            <div class="carousel-caption ">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+            <div class="col-12 col-lg-4">
+              <img src="assets/img/desarrollador2.svg" alt="Imagen de perfil" class="logo__perfil">
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#hobbies__carrusel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#hobbies__carrusel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-    <!-- Formaciones -->
-    <section id="formaciones" class="formaciones section">
-      <div class="container-fluid">
-        <div class="row">
-          <div class=" formaciones__col col-12">
-            <h1 class="formacion__titulo seccion__titulo">Formación académica</h1>
-            <div class="formaciones__conteiner">
-              <div class="formacion__item">
-                <div class="box">
-                  <img src="assets/img/universidad.svg" alt="Imagen de la UCV" class="formacion__imagen1">
-                  <h2 class="formaciones__titulo1">Ingeniería de Sistemas</h2>
-                  <h6 class="formaciones__tiempo">2021 - Actualidad</h6>
-                </div>
-              </div>
-              <div class="formacion__item">
-                <div class="box">
-                  <img src="assets/img/ONE.png" alt="Imagen ONE" class="formacion__imagen2">
-                  <h2 class="formaciones__titulo2">Formación Front-End</h2>
-                  <h6 class="formaciones__tiempo">2022 - Actualidad</h6>
-                </div>
-              </div>
+      </section>
+      <!-- Sobre Mi -->
+      <section id="sobreMi" class="info section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="sobre col-12">
+              <h1 class="sobre__titulo">Sobre mi</h1>
+              <p class="sobre__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit
+                velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium.
+                Suspendisse potenti. Ut semper sagittis ligula et lacinia.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper
+                dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut
+                semper
+                sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Proyectos -->
-    <section id="proyectos" class="proyectos section">
-      <h1 class="proyectos__titulo seccion__titulo">Experiencia profesional</h1>
-      <div class="container">
-        <div class="row proyectos__row">
-          <div class="proyectos__col col-12 col-lg-7">
-            <div class="conteiner__proyecto">
-              <img src="assets/img/meac2003.github.io_Challenge1-Oracle-One_.png" alt="" class="proyecto__imagen">
-            </div>
-          </div>
-          <div class="proyectos__col col-12 col-lg-5">
-            <div class="proyecto__descripcion">
-              <h1 class="proyecto__titulo">Encriptador de Texto</h1>
-              <p class="proyecto__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dolorem
-                nihil ad nulla praesentium quidem beatae ipsum aliquam expedita molestiae esse maxime reiciendis
-                enim
-                debitis nisi culpa temporibus, molestias in!</p>
-              <div class="badges-contenedor">
-                <span class="badge text-bg-primary">HTML</span>
-                <span class="badge text-bg-primary">CSS</span>
-                <span class="badge text-bg-primary">JavaScript</span>
-              </div>
-              <ul class="enlace__lista">
-                <li class="enlace__item"><a href="https://meac2003.github.io/Challenge1-Oracle-One/" target="_blank"
-                    rel="noopener noreferrer" class="enlace__link">Repositorio<i
-                      class="bi bi-github icono__enlace"></i></a></li>
-                <li class="enlace__item"><a href="https://meac2003.github.io/Challenge1-Oracle-One/" target="_blank"
-                    rel="noopener noreferrer" class="enlace__link">Demo<i
-                      class="bi bi-box-arrow-up-right icono__enlace"></i></a></li>
+      </section>
+      <!-- Skills -->
+      <section id="skills" class="skills section">
+        <div class="conteiner__skills container-fluid">
+          <div class="row">
+            <div class="skills__col col-12">
+              <h1 class="skills__titulo seccion__titulo">Skills</h1>
+              <ul class="skills__lista">
+                <li class="skill__item"><img class="skill__imagen" src="assets/img/html5-original.png"
+                    alt="Imagen HTML">
+                  <span>HTML 5 </span>
+                </li>
+                <li class="skill__item"><img class="skill__imagen" src="assets/img/css3-original.png" alt="Imagen CSS">
+                  <span> CSS 3</span>
+                </li>
+                <li class="skill__item"><img class="skill__imagen" src="assets/img/javascript-original.png"
+                    alt="Imagen JS">
+                  <span> JavaScript</span>
+                </li>
+                <li class="skill__item"><img class="skill__imagen skill__imagen--modificado"
+                    src="assets/img/react-original.png" alt="Imagen React"> <span> React</span>
+                </li>
+                <li class="skill__item"><img class="skill__imagen skill__imagen--modificado"
+                    src="assets/img/bootstrap-original.png" alt="Imagen Bootstrap"> <span>Bootstrap</span> </li>
+                <li class="skill__item"><img class="skill__imagen" src="assets/img/tailwindcss.png"
+                    alt="Imagen TailwindCSS">
+                  <span>TailwindCSS</span>
+                </li>
+                <li class="skill__item"><img class="skill__imagen skill__imagen--modificado" src="assets/img/git.png"
+                    alt="Imagen Git"> <span>Git</span>
+                </li>
+                <li class="skill__item"><img class="skill__imagen skill__imagen--modificado" src="assets/img/figma.png"
+                    alt="Imagen Figma"> <span>Figma</span></li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Contacto -->
-    <section id="contacto" class="contacto section">
-      <div class="container">
-        <div class="row">
-          <div class="contacto__col col-12 col-md-6">
-            <img src="assets/img/Screenshot_22 1.png" class="contacto__imagen">
-            <h1>Contacto</h1>
-            <p class="contacto__texto">¿Quieres contactarme?<br>
-              Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+      </section>
+      <!-- Hobbies -->
+      <section id="hobbie" class="hobbies section">
+        <h1 class="hobbie__titulo seccion__titulo">Hobbies</h1>
+
+        <!-- Carrusel -->
+        <div id="hobbies__carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hobbies__carrusel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hobbies__carrusel" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hobbies__carrusel" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
-          <div class="contacto__col2 col-12 col-md-6">
-            <form class="contacto__info">
-              <input type="text" id="nombreApellido" class="input__padron" required placeholder="Nombre">
-              <input type="email" id="correoElectronico" class="input__padron" required placeholder="email@dominio.com">
-              <input type="text" id="telefono" class="input__padron input__padron--modificado" required
-                placeholder="Asunto">
-              <textarea cols="68" rows="10" id="mensaje" class="input__padron--texta" required
-                placeholder="Mensaje"></textarea>
-            </form>
-            <div class="container__btn">
-              <button class="btn__Enviar">
-                <span class="icon">
-                  <i class="fas fa-rocket"></i>
-                </span>
-                <span class="text__btn">Enviar</span>
-              </button>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <div class="contenedor__imagen">
+                <img src="assets/img/desarrollador2.svg" class="hobbie__imagen" alt="...">
+              </div>
+              <div class="carousel-caption">
+                <h5 class="seccion__clara">First slide label</h5>
+                <p class="seccion__clara">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="contenedor__imagen">
+                <img src="assets/img/desarrollador2.svg" class="hobbie__imagen" alt="...">
+              </div>
+              <div class="carousel-caption ">
+                <h5 class="seccion__clara">Second slide label</h5>
+                <p class="seccion__clara">Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="contenedor__imagen">
+                <img src="assets/img/desarrollador2.svg" class="hobbie__imagen" alt="...">
+              </div>
+              <div class="carousel-caption ">
+                <h5 class="seccion__clara">Second slide label</h5>
+                <p class="seccion__clara">Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#hobbies__carrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#hobbies__carrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- Formaciones -->
+      <section id="formaciones" class="formaciones section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class=" formaciones__col col-12">
+              <h1 class="formacion__titulo seccion__titulo">Formación académica</h1>
+              <div class="formaciones__conteiner">
+                <div class="formacion__item">
+                  <div class="box">
+                    <img src="assets/img/universidad.svg" alt="Imagen de la UCV" class="formacion__imagen1">
+                    <h2 class="formaciones__titulo1">Ingeniería de Sistemas</h2>
+                    <h6 class="formaciones__tiempo">2021 - Actualidad</h6>
+                  </div>
+                </div>
+                <div class="formacion__item">
+                  <div class="box">
+                    <img src="assets/img/ONE.png" alt="Imagen ONE" class="formacion__imagen2">
+                    <h2 class="formaciones__titulo2">Formación Front-End</h2>
+                    <h6 class="formaciones__tiempo">2022 - Actualidad</h6>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-    </section>
-  </main>
+      </section>
+      <!-- Proyectos -->
+      <section id="proyectos" class="proyectos section">
+        <h1 class="proyectos__titulo seccion__titulo">Experiencia profesional</h1>
+        <div class="container">
+          <div class="row proyectos__row">
+            <div class="proyectos__col col-12 col-lg-7">
+              <div class="conteiner__proyecto">
+                <img src="assets/img/meac2003.github.io_Challenge1-Oracle-One_.png" alt="" class="proyecto__imagen">
+              </div>
+            </div>
+            <div class="proyectos__col col-12 col-lg-5">
+              <div class="proyecto__descripcion">
+                <h1 class="proyecto__titulo seccion__clara">Encriptador de Texto</h1>
+                <p class="proyecto__info seccion__clara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dolorem
+                  nihil ad nulla praesentium quidem beatae ipsum aliquam expedita molestiae esse maxime reiciendis
+                  enim
+                  debitis nisi culpa temporibus, molestias in!</p>
+                <div class="badges-contenedor">
+                  <span class="badge text-bg-primary">HTML</span>
+                  <span class="badge text-bg-primary">CSS</span>
+                  <span class="badge text-bg-primary">JavaScript</span>
+                </div>
+                <ul class="enlace__lista">
+                  <li class="enlace__item"><a href="https://meac2003.github.io/Challenge1-Oracle-One/" target="_blank"
+                      rel="noopener noreferrer" class="enlace__link">Repositorio<i
+                        class="bi bi-github icono__enlace"></i></a></li>
+                  <li class="enlace__item"><a href="https://meac2003.github.io/Challenge1-Oracle-One/" target="_blank"
+                      rel="noopener noreferrer" class="enlace__link">Demo<i
+                        class="bi bi-box-arrow-up-right icono__enlace"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contacto -->
+      <section id="contacto" class="contacto section">
+        <div class="container">
+          <div class="row">
+            <div class="contacto__col col-12 col-md-6">
+              <img src="assets/img/Screenshot_22 1.png" class="contacto__imagen">
+              <h1>Contacto</h1>
+              <p class="contacto__texto">¿Quieres contactarme?<br>
+                Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+            </div>
+            <div class="contacto__col2 col-12 col-md-6">
+              <form class="contacto__info">
+                <input type="text" id="nombreApellido" class="input__padron" required placeholder="Nombre">
+                <input type="email" id="correoElectronico" class="input__padron" required
+                  placeholder="email@dominio.com">
+                <input type="text" id="telefono" class="input__padron input__padron--modificado" required
+                  placeholder="Asunto">
+                <textarea cols="68" rows="10" id="mensaje" class="input__padron--texta" required
+                  placeholder="Mensaje"></textarea>
+              </form>
+              <div class="container__btn">
+                <button class="btn__Enviar">
+                  <span class="icon">
+                    <i class="fas fa-rocket"></i>
+                  </span>
+                  <span class="text__btn">Enviar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+  </section>
   <footer>
     <div class="conteiner">
-      <div class="derechos__autor">&#169; Copyright 2023. Desarrollado por Manuel Enrique Antón Cisneros. </div>
-      <div class="icon__plataformas">
-        <ul>
-          <li><a href="https://github.com/MEAC2003" target="_blank" rel="noopener noreferrer"><i
-                class="bi bi-github"></i></a></li>
-          <li><a href=""><i class="bi bi-linkedin"></i></a></li>
-        </ul>
+      <div class="footer__conten">
+        <div class="derechos__autor">&#169; Copyright 2023. Desarrollado por Manuel Enrique Antón Cisneros. </div>
+        <div class="icon">
+          <ul class="icon__lista">
+            <li class="icon__item"><a class="icon__link" href="https://github.com/MEAC2003" target="_blank"
+                rel="noopener noreferrer"><i class="bi bi-github"></i></a></li>
+            <li class="icon__item"><a class="icon__link" href=""><i class="bi bi-linkedin"></i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
