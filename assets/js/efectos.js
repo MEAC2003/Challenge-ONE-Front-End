@@ -2,6 +2,17 @@ window.onload = function () {
   window.scrollTo(0, 0);
 }
 
+let banner = document.querySelector('.banner');
+let nav = document.querySelector('.navbar')
+let diaNoche = document.querySelector('.dia__noche')
+
+diaNoche.onclick = function () {
+  banner.classList.toggle('night')
+  nav.classList.toggle('night')
+}
+
+
+
 const navLinks = document.querySelectorAll('.nav-link');
 
 navLinks.forEach(navLink => {
