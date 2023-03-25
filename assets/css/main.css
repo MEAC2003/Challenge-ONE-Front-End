@@ -18,12 +18,16 @@ main {
 }
 
 .quien {
-  padding: 4.6rem 1.5rem 4rem 4.3rem;
+  padding: 4.6rem 0 4rem 2.6rem;
 }
+
+/* .quien__logo {
+  border: 2px solid rebeccapurple;
+} */
 
 .quien__soy {
   font-weight: 700;
-  font-size: 3.2rem;
+  font-size: 3.2em;
   line-height: 65px;
   color: black;
 }
@@ -115,14 +119,14 @@ main {
 }
 
 .sobre__titulo {
-  padding: 1rem 0 1rem 4.3rem;
+  padding: 1rem 0 1rem 2.6rem;
   font-weight: 700;
   font-size: 2rem;
   color: #00B6F0;
 }
 
 .sobre__info {
-  padding: 0 32% 0 4.3rem;
+  padding: 0 10% 0 2.6rem;
   font-weight: 400;
   font-size: 1rem;
   line-height: 25px;
@@ -627,4 +631,124 @@ textarea {
 
 .banner.night .proyectos__row {
   box-shadow: rgba(255, 255, 255, 0.4) 3px 3px 3px inset, rgba(255, 255, 255, 0.4) 3px 3px 3px;
+}
+
+
+@media screen and (min-width: 1125px) {
+  .logo__perfil {
+    width: 390px;
+    padding-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 1124px) {
+  .quien__soy {
+    font-size: 2.9em;
+  }
+
+  .logo__perfil {
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .descripcion {
+    padding-top: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .quien__soy {
+    font-size: 2.6rem;
+  }
+
+  .menu__item {
+    margin: 3.5rem 3rem 0 6rem;
+  }
+
+  .logo__perfil {
+    width: 310px;
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 882px) {
+  .quien__soy {
+    font-size: 2.23rem;
+  }
+
+  .menu__item {
+    margin: 3.5rem 3rem 0 5rem;
+  }
+
+  .logo__perfil {
+    width: 270px;
+    padding-left: .5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .quien {
+    order: 1;
+    padding: 0 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descripcion {
+    padding-top: 3.2rem;
+  }
+
+  .quien__soy {
+    font-size: 2.6rem;
+  }
+
+  .quien__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 0;
+  }
+
+  .menu__item {
+    margin: 3.5rem 3rem 0 3rem;
+  }
+}
+
+
+@media screen and (max-width: 570px) {
+  .quien__soy {
+    font-size: 2.3rem;
+  }
+
+  .logo__perfil {
+    width: 260px;
+    height: 328px;
+    margin-bottom: -1rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .quien__soy {
+    font-size: 2rem;
+  }
+
+  .logo__perfil {
+    width: 230px;
+  }
+
+  .menu__item {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .quien__soy {
+    font-size: 1.7rem;
+  }
+  .menu__item {
+    margin: 3.5rem 2rem 0 2rem;
+  }
 }

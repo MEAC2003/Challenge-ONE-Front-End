@@ -25,7 +25,7 @@ navLinks.forEach(navLink => {
 let typingText = new Typed("#text", {
   strings: ["Manuel Antón"],
   loop: true,
-  typeSpeed: 140,
+  typeSpeed: 100,
   backSpeed: 50,
   backDelay: 1000,
 });
