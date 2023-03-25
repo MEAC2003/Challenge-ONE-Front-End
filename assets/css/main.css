@@ -604,3 +604,27 @@ textarea {
 .banner.night .carousel-dark .carousel-control-prev-icon {
   filter: hue-rotate(0deg);
 }
+
+.banner.night .input__padron--texta:focus,
+.banner.night .input__padron:focus {
+  border: 2px solid #97dffc;
+}
+
+.banner.night .menu__lista li span {
+  background: #fff;
+  color: #000;
+}
+
+.banner.night .menu__lista li:nth-child(2) span {
+  color: #fff;
+  background: #0077B5;
+}
+
+.banner.night .formaciones__conteiner .formacion__item {
+  box-shadow: rgba(255, 255, 255, 0.2) 3px 3px 3px inset, rgba(0, 0, 0, 0.2) -3px -3px 3px inset, rgba(255, 255, 255, 0.2) 3px 3px 3px, rgba(0, 0, 0, 0.2) -3px -3px 3px;
+  background: #fff;
+}
+
+.banner.night .proyectos__row {
+  box-shadow: rgba(255, 255, 255, 0.4) 3px 3px 3px inset, rgba(255, 255, 255, 0.4) 3px 3px 3px;
+}
