@@ -600,6 +600,7 @@ textarea {
   color: #0077B5;
 }
 
+
 .banner.night .carousel-indicators button {
   background-color: #fff;
 }
@@ -634,6 +635,7 @@ textarea {
 }
 
 
+
 @media screen and (min-width: 1125px) {
   .logo__perfil {
     width: 390px;
@@ -652,6 +654,11 @@ textarea {
 }
 
 @media screen and (max-width: 991px) {
+  .quien__soy {
+    font-size: 2.6rem;
+    line-height: 45px;
+  }
+
   .descripcion {
     padding-top: 4.5rem;
   }
@@ -720,6 +727,7 @@ textarea {
 @media screen and (max-width: 570px) {
   .quien__soy {
     font-size: 2.3rem;
+    line-height: 45px;
   }
 
   .logo__perfil {
@@ -747,7 +755,9 @@ textarea {
 @media screen and (max-width: 410px) {
   .quien__soy {
     font-size: 1.7rem;
+    line-height: 35px;
   }
+
   .menu__item {
     margin: 3.5rem 2rem 0 2rem;
   }
