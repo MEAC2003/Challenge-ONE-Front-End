@@ -659,7 +659,7 @@ textarea {
   .contenedor__imagen {
     margin-top: 7rem;
   }
-  
+
 }
 
 @media screen and (min-width: 1125px) {
@@ -816,7 +816,33 @@ textarea {
   .hobbie__imagen {
     width: 25%;
   }
-  
+
+  .formaciones__conteiner .formacion__item {
+    width: 300px;
+    height: 300px;
+  }
+
+  .formacion__imagen1 {
+    margin: 2.5rem 0 0 1.2rem;
+    width: 70%;
+  }
+
+  .formaciones__titulo1 {
+    font-size: 16px;
+  }
+
+  .formacion__imagen2 {
+    width: 90%;
+    margin: 2.5rem 0 0 0;
+  }
+
+  .formaciones__tiempo {
+    font-size: 15px;
+  }
+
+  .formaciones__titulo2 {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 435px) {
