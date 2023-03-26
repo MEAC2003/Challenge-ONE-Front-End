@@ -118,7 +118,7 @@ header {
 
 @media screen and (max-width: 991px) {
   .navbar {
-    padding: 2rem 2rem .5rem 2rem;
+    padding: 2rem 2rem .5rem 1.25rem;
   }
 
   .banner.night .navbar-toggler-icon {
@@ -133,14 +133,30 @@ header {
     margin-top: 1rem;
   }
 
+  .nav-link::before {
+    right: 0px;
+  }
+
+  .nav-link::after {
+    left: 0px;
+  }
+
+  .nav-link:hover::before {
+    width: 90%;
+  }
+  
+  .nav-link:hover::after {
+    width: 80%;
+  }
+
   .nav-link.active::after {
     width: 100%;
     left: 0px;
   }
-  
+
   .nav-link.active::before {
     width: 100%;
     right: 0px;
   }
-  
+
 }

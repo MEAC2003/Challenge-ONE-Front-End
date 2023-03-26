@@ -126,7 +126,7 @@ main {
 }
 
 .sobre__info {
-  padding: 0 10% 0 2.6rem;
+  padding: 0 2.6rem 0 2.6rem;
   font-weight: 400;
   font-size: 1rem;
   line-height: 25px;
@@ -150,13 +150,14 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   padding: initial;
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .skill__item {
   list-style-type: none;
   font-family: 'Roboto', sans-serif;
+  font-weight: 550;
   font-size: 1rem;
   margin-left: 3rem;
   margin-right: 2rem;
@@ -634,8 +635,6 @@ textarea {
   box-shadow: rgba(255, 255, 255, 0.4) 3px 3px 3px inset, rgba(255, 255, 255, 0.4) 3px 3px 3px;
 }
 
-
-
 @media screen and (min-width: 1125px) {
   .logo__perfil {
     width: 390px;
@@ -653,7 +652,35 @@ textarea {
   }
 }
 
+@media screen and (max-width: 1142px) {
+  .skill__item {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .skill__item {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+  }
+
+  .skills__lista span {
+    padding-left: 0;
+    padding-top: .7rem;
+  }
+
+}
+
 @media screen and (max-width: 991px) {
+  .quien {
+    padding: 4.6rem 0 4rem 2rem;
+  }
+
   .quien__soy {
     font-size: 2.6rem;
     line-height: 45px;
@@ -662,21 +689,15 @@ textarea {
   .descripcion {
     padding-top: 4.5rem;
   }
-}
 
-@media screen and (max-width: 976px) {
-  .quien__soy {
-    font-size: 2.6rem;
+  .sobre__titulo {
+    padding: 1rem 0 1rem 2rem;
   }
 
-  .menu__item {
-    margin: 3.5rem 3rem 0 6rem;
+  .sobre__info {
+    padding: 0 2rem 0 2rem;
   }
 
-  .logo__perfil {
-    width: 310px;
-    padding-left: 3rem;
-  }
 }
 
 @media screen and (max-width: 882px) {
@@ -752,6 +773,14 @@ textarea {
   }
 }
 
+@media screen and (max-width: 435px) {
+  .skill__item {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 20%;
+  }
+}
+
 @media screen and (max-width: 410px) {
   .quien__soy {
     font-size: 1.7rem;
@@ -760,5 +789,15 @@ textarea {
 
   .menu__item {
     margin: 3.5rem 2rem 0 2rem;
+  }
+}
+
+@media screen and (max-width: 369px) {
+  .quien__soy {
+    font-size: 1.4rem;
+  }
+
+  .logo__perfil {
+    width: 230px;
   }
 }
