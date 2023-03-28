@@ -127,7 +127,7 @@ main {
 
 .sobre__info {
   padding: 0 2.6rem 0 2.6rem;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 25px;
   text-align: justify;
@@ -138,6 +138,13 @@ main {
 .sobre .sobre__info span {
   position: relative;
   display: inline-block;
+}
+
+.icon__bandera {
+  width: 1.3rem;
+  height: auto;
+  padding-bottom: .5rem;
+  padding-left: .15rem;
 }
 
 /* Skills */
@@ -190,27 +197,30 @@ main {
 
 .carousel {
   margin-top: 4rem;
-  width: 50%;
+  width: 45%;
 }
 
 .carousel-item {
-  height: 400px;
+  height: 350px;
 }
 
 .contenedor__imagen {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 6rem;
+  margin-top: 11.5%;
 }
 
 .hobbie__imagen {
   width: 20%;
+  border-radius: 1rem;
 }
 
 .seccion__clara {
+  font-weight: bold;
+  font-size: 1.4rem;
   color: black;
-  padding-bottom: 4rem;
+  padding-bottom: 3.5rem;
 }
 
 /* Formacion */
@@ -309,8 +319,6 @@ main {
 }
 
 .proyectos__row {
-  /* width: 90%;
-  margin: 0 auto; */
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.05), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.05);
   border-radius: 40px 0 40px 0px;
 }
@@ -321,18 +329,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-/* .proyectos__conteiner {
-  display: flex;
-  align-items: center;
-  width: 70%;
-  height: 430px;
-  padding: 0px;
-  gap: 28px;
-  background-color: #fff;
-  border-radius: 1.7rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-} */
 
 .conteiner__proyecto {
   width: 90%;
@@ -641,7 +637,7 @@ textarea {
   box-shadow: rgba(255, 255, 255, 0.4) 3px 3px 3px inset, rgba(255, 255, 255, 0.4) 3px 3px 3px;
 }
 
-@media screen and (min-width: 1900px) {
+/* @media screen and (min-width: 1900px) {
   .contenedor__imagen {
     margin-top: 2.5rem;
   }
@@ -656,6 +652,47 @@ textarea {
 @media screen and (min-width: 1456px) and (max-width: 1695px) {
   .contenedor__imagen {
     margin-top: 5.5rem;
+  }
+} */
+@media screen and (min-width: 2096px) {
+  .contenedor__imagen {
+    margin-top: 0rem;
+  }
+
+  .seccion__clara {
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1901px) and (max-width: 2095px) {
+  .contenedor__imagen {
+    margin-top: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1701px) and (max-width: 1900px) {
+  .contenedor__imagen {
+    margin-top: 2.5rem;
+  }
+
+  .seccion__clara {
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1571px) and (max-width: 1700px) {
+  .contenedor__imagen {
+    margin-top: 3.5rem;
+  }
+
+  .seccion__clara {
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1520px) and (max-width: 1570px) {
+  .contenedor__imagen {
+    margin-top: 4rem;
   }
 }
 
@@ -690,6 +727,22 @@ textarea {
 
   .input__padron {
     width: 95.5%;
+  }
+}
+
+@media screen and (max-width: 1355px) {
+  .seccion__clara {
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 1329px) {
+  .contenedor__imagen {
+    margin-top: 5.5rem;
+  }
+
+  .seccion__clara {
+    padding-bottom: 3.7rem;
   }
 }
 
@@ -730,12 +783,6 @@ textarea {
   }
 }
 
-@media screen and (max-width: 1295px) {
-  .contenedor__imagen {
-    margin-top: 7rem;
-  }
-
-}
 
 @media screen and (min-width: 1125px) {
   .logo__perfil {
@@ -761,6 +808,12 @@ textarea {
   }
 }
 
+@media screen and (max-width: 1110px) {
+  .contenedor__imagen {
+    margin-top: 6.5rem;
+  }
+}
+
 @media screen and (max-width: 1076px) {
   .skill__item {
     font-size: 1rem;
@@ -778,6 +831,14 @@ textarea {
 
   .carousel {
     width: 70%;
+  }
+
+  .contenedor__imagen {
+    margin-top: 3rem;
+  }
+
+  .seccion__clara {
+    padding-bottom: 3.2rem;
   }
 }
 
@@ -804,11 +865,11 @@ textarea {
   }
 
   .contenedor__imagen {
-    margin-top: 8rem;
+    margin-top: 4.6rem;
   }
 
   .seccion__clara {
-    font-size: 1rem;
+    padding-bottom: 3.2rem;
   }
 
   .proyecto__titulo {
@@ -860,6 +921,13 @@ textarea {
     padding-left: .5rem;
   }
 }
+
+@media screen and (max-width: 815px) {
+  .contenedor__imagen {
+    margin-top: 6.4rem;
+  }
+}
+
 
 @media screen and (max-width: 767px) {
   .quien {
@@ -929,6 +997,12 @@ textarea {
 
 }
 
+@media screen and (max-width: 630px) {
+  .hobbie__imagen {
+    width: 26%;
+  }
+}
+
 @media screen and (max-width: 610px) {
   .proyectos__row {
     width: 90%;
@@ -956,6 +1030,19 @@ textarea {
 
   .contacto__col p {
     font-size: .9rem;
+  }
+
+  .contenedor__imagen {
+    margin-top: 4.5rem;
+  }
+
+  .hobbie__imagen {
+    width: 35%;
+  }
+
+  .seccion__clara {
+    font-size: 1.4rem;
+    padding-bottom: 3.7rem;
   }
 }
 
@@ -990,11 +1077,11 @@ textarea {
   }
 
   .contenedor__imagen {
-    margin-top: 10rem;
+    margin-top: 4.5rem;
   }
 
   .hobbie__imagen {
-    width: 25%;
+    width: 40%;
   }
 
   .formaciones__conteiner .formacion__item {
@@ -1087,6 +1174,14 @@ textarea {
 
   .menu__item {
     margin: 3.5rem 2rem 0 2rem;
+  }
+
+  .contenedor__imagen {
+    margin-top: 6rem;
+  }
+
+  .seccion__clara {
+    font-size: 1.2rem;
   }
 }
 
