@@ -312,23 +312,31 @@
                 Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
             </div>
             <div class="contacto__col2 col-12 col-md-6">
-              <form class="contacto__info">
-                <input type="text" id="nombreApellido" class="input__padron" required placeholder="Nombre">
-                <input type="email" id="correoElectronico" class="input__padron" required
-                  placeholder="email@dominio.com">
-                <input type="text" id="telefono" class="input__padron input__padron--modificado" required
-                  placeholder="Asunto">
-                <textarea cols="68" rows="10" id="mensaje" class="input__padron--texta" required
-                  placeholder="Mensaje"></textarea>
+              <form action="https://formsubmit.co/manuelantoncisneros2020@hotmail.com" method="POST" target="_blank"
+                class="contacto__info contacto__fotm">
+                <input type="text" class="input__padron" name="name"
+                  title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                  placeholder="Nombre" required>
+                <input type="email" class="input__padron" name="email" title="Email incorrecto"
+                  pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                  placeholder="email@dominio.com" required>
+                <input type="subject" class="input__padron input__padron--modificado" name="subject"
+                  title="El asunto es requerido" placeholder="Asunto" required>
+                <textarea cols="68" rows="10" class="input__padron--texta" name="comments" data-pattern="^.{1,255}$"
+                 title="Tu comentario no debe exceder los 255 caracteres" placeholder="Mensaje" required></textarea>
+                <div class="container__btn">
+                  <button type="submit" class="btn__Enviar">
+                    <span class="icon">
+                      <i class="fas fa-rocket"></i>
+                    </span>
+                    <span class="text__btn">Enviar</span>
+                  </button>
+                </div>
+                <input type="hidden" name="_next" value="https://meac2003.github.io/Challenge-ONE-Front-End/">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <div class="contacto__form__resouesta none"></div>
               </form>
-              <div class="container__btn">
-                <button class="btn__Enviar">
-                  <span class="icon">
-                    <i class="fas fa-rocket"></i>
-                  </span>
-                  <span class="text__btn">Enviar</span>
-                </button>
-              </div>
             </div>
           </div>
       </section>
