@@ -70,6 +70,7 @@
           </div>
         </div>
       </nav>
+
     </header>
     <main>
       <!-- Quien Soy -->
@@ -304,6 +305,22 @@
       <!-- Contacto -->
       <section id="contacto" class="contacto section">
         <div class="container">
+          <div class="contacto__form__respuesta">
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: flex;width: 0%; height: 0px;">
+              <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </symbol>
+            </svg>
+            <div id="alert" class="error ocultar-error alert alert-danger d-flex align-items-center" role="alert">
+              <svg class="bi ima-error flex-shrink-0 me-2" role="img" aria-label="Danger:">
+                <use xlink:href="#exclamation-triangle-fill" />
+              </svg>
+              <div class="letra-alert">
+                Ocurrió un error al enviar, intente nuevamente.
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="contacto__col col-12 col-md-6">
               <img src="assets/img/Screenshot_22 1.png" class="contacto__imagen">
@@ -312,18 +329,23 @@
                 Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
             </div>
             <div class="contacto__col2 col-12 col-md-6">
-              <form action="https://formsubmit.co/manuelantoncisneros2020@hotmail.com" method="POST" target="_blank"
-                class="contacto__info contacto__fotm">
-                <input type="text" class="input__padron" name="name"
-                  title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
-                  placeholder="Nombre" required>
-                <input type="email" class="input__padron" name="email" title="Email incorrecto"
-                  pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-                  placeholder="email@dominio.com" required>
+              <form class="contacto__info contacto__form">
+                <div class="contacto__validaciones">
+                  <div class="contacto__validacion">
+                    <input type="text" class="input__padron" name="name"
+                      title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                      placeholder="Nombre" required>
+                  </div>
+                  <div class="contacto__validacion">
+                    <input type="email" class="input__padron" name="email" title="Email incorrecto"
+                      pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                      placeholder="email@dominio.com" required>
+                  </div>
+                </div>
                 <input type="subject" class="input__padron input__padron--modificado" name="subject"
                   title="El asunto es requerido" placeholder="Asunto" required>
-                <textarea cols="68" rows="10" class="input__padron--texta" name="comments" data-pattern="^.{1,255}$"
-                 title="Tu comentario no debe exceder los 255 caracteres" placeholder="Mensaje" required></textarea>
+                <textarea class="input__padron--texta" name="comments" data-pattern="^.{1,500}$"
+                  title="Tu comentario no debe exceder los 500 caracteres" placeholder="Mensaje" required></textarea>
                 <div class="container__btn">
                   <button type="submit" class="btn__Enviar">
                     <span class="icon">
@@ -335,7 +357,6 @@
                 <input type="hidden" name="_next" value="https://meac2003.github.io/Challenge-ONE-Front-End/">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
-                <div class="contacto__form__resouesta none"></div>
               </form>
             </div>
           </div>
@@ -361,7 +382,9 @@
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
   <script src="assets/js/anime.min.js"></script>
-  <script src="assets/js/efectos.js">
+  <script src="assets/js/animaciones.js">
+  </script>
+  <script src="assets/js/envio-validacion.js">
   </script>
 </body>
 

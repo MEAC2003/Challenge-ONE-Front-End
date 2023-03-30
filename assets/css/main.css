@@ -450,8 +450,9 @@ main {
   box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   margin: 15px 10px;
-  width: 46%;
+  width: 90.5%;
   height: 55px;
+  padding-right: 15px;
 }
 
 .input__padron::placeholder {
@@ -459,24 +460,26 @@ main {
   opacity: 0.6;
 }
 
-.input__padron--texta:focus,
+/* .input__padron--texta:focus,
 .input__padron:focus {
   border: 1px solid #97dffc;
-}
+} */
 
 .input__padron--modificado {
   width: 95.5%;
+  display: inline-block
 }
 
 .input__padron--texta {
-  display: block;
+  display: inline-block;
   padding-top: 15px;
+  padding-right: 15px;
   width: 95.5%;
   margin-top: 15px;
   margin-left: 10px;
   box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-
+  height: 200px;
 }
 
 .input__padron--texta::placeholder {
@@ -498,6 +501,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
 }
 
 .btn__Enviar {
@@ -515,7 +519,6 @@ textarea {
   border-radius: 6px;
   position: relative;
   font-size: 16px;
-  margin-top: 3rem;
 }
 
 .btn__Enviar:hover {
@@ -582,6 +585,85 @@ textarea {
   }
 }
 
+/* Alerta */
+.contacto__form__respuesta {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+}
+
+.error {
+  width: 22%;
+  height: 50px;
+}
+
+.ocultar-error {
+  visibility: hidden;
+}
+
+.ima-error {
+  width: 9%;
+}
+
+.letra-alert {
+  font-size: 12px;
+}
+
+/* Validaciones de la sección contacto */
+
+.contacto__form [required]:valid {
+  border: thin solid #4caf50;
+}
+
+.contacto__form [required]:invalid:not(:placeholder-shown) {
+  border: thin solid #ff0000df;
+}
+
+.contacto__validaciones {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.contacto__validacion {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+/* .contacto__form [required]:invalid:not(:focus):not(:placeholder-shown) {
+  border: thin solid #f44336;
+
+} */
+
+.contacto__form__error {
+  padding-left: 1rem;
+  font-size: 85%;
+  color: #ff0000df;
+  transition: all 8ms ease;
+}
+
+.contacto__form__error.active {
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-in-out both;
+}
+
+.none {
+  display: none;
+}
+
+@keyframes show-message {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 /* Banner Día o noche*/
 
 .banner.night,
@@ -639,6 +721,14 @@ textarea {
 
 .banner.night .proyectos__row {
   box-shadow: rgba(255, 255, 255, 0.4) 3px 3px 3px inset, rgba(255, 255, 255, 0.4) 3px 3px 3px;
+}
+
+.banner.night .contacto__form [required]:valid {
+  border: 2px solid #4caf50;
+}
+
+.banner.night .contacto__form [required]:invalid:not(:placeholder-shown) {
+  border: thin solid #ff0000df;
 }
 
 @media screen and (min-width: 2096px) {
@@ -712,8 +802,21 @@ textarea {
     font-size: 1.9rem;
   }
 
-  .input__padron {
-    width: 95.5%;
+  .contacto__validaciones {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .contacto__validacion {
+    display: flex;
+    flex-direction: column;
+    width: 105%;
+  }
+  
+
+  .error {
+    width: 25%;
   }
 }
 
@@ -732,6 +835,8 @@ textarea {
     padding-bottom: 3.7rem;
   }
 }
+
+
 
 @media screen and (max-width: 1199px) {
   .conteiner__proyecto {
@@ -767,6 +872,10 @@ textarea {
 
   .icono__enlace {
     font-size: 1.8rem;
+  }
+
+  .error {
+    width: 30%;
   }
 }
 
@@ -892,6 +1001,10 @@ textarea {
   textarea {
     font-size: .8rem;
   }
+
+  .error {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 882px) {
@@ -974,6 +1087,10 @@ textarea {
   textarea {
     font-size: .8rem;
   }
+
+  .error {
+    width: 55%;
+  }
 }
 
 
@@ -1046,6 +1163,17 @@ textarea {
     font-size: 13.7px;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .error {
+    width: 60%;
+  }
+
+  .letra-alert {
+    text-align: center;
+    font-size: 12px;
   }
 }
 

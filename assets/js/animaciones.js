@@ -2,6 +2,7 @@ window.onload = function () {
   window.scrollTo(0, 0);
 }
 
+// Cambio de color de la página
 let banner = document.querySelector('.banner');
 let nav = document.querySelector('.navbar')
 let diaNoche = document.querySelector('.dia__noche')
@@ -12,7 +13,7 @@ diaNoche.onclick = function () {
 }
 
 
-
+// Animación al elegir un enlace en el nav 
 const navLinks = document.querySelectorAll('.nav-link');
 
 navLinks.forEach(navLink => {
@@ -22,6 +23,7 @@ navLinks.forEach(navLink => {
   });
 });
 
+// Nombre automático 
 let typingText = new Typed("#text", {
   strings: ["Manuel Antón"],
   loop: true,
@@ -29,6 +31,8 @@ let typingText = new Typed("#text", {
   backSpeed: 50,
   backDelay: 1000,
 });
+
+// Animación de los enlaces del nav cuando se avance con el scroll
 window.addEventListener('scroll', function () {
   const sections = document.querySelectorAll('.section');
   const navLinks = document.querySelectorAll('.nav-link');
@@ -48,13 +52,3 @@ window.addEventListener('scroll', function () {
   navLinks[currentSectionIndex].classList.add('active');
 });
 
-
-const btn = document.querySelector('.btn__Enviar');
-
-btn.addEventListener('click', function () {
-  this.classList.toggle('active');
-
-  setTimeout(() => {
-    this.classList.remove('active');
-  }, 3000);
-});
