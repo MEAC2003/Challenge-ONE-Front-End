@@ -1149,9 +1149,11 @@ textarea {
 
 @media screen and (max-width: 575px) {
   .contacto__validacion {
-    width: 105%;
+    width: 100%;
   }
-
+  .input__padron {
+    width: 95.5%;
+}
 }
 
 @media screen and (max-width: 570px) {
@@ -1179,7 +1181,6 @@ textarea {
   }
 
   .seccion__clara {
-    font-size: 1.4rem;
     padding-bottom: 3.7rem;
   }
 }
