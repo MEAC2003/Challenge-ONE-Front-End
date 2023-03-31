@@ -28,6 +28,7 @@ header {
 
 .navbar-nav {
   padding-right: .5rem;
+  flex-wrap: wrap;
 }
 
 .navbar-brand {

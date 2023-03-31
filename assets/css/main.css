@@ -430,7 +430,6 @@ main {
 .contacto__col h1 {
   font-weight: 700;
   font-size: 2rem;
-  /* margin-left: 5rem; */
   color: #00B6F0;
 }
 
@@ -438,7 +437,6 @@ main {
   font-weight: 570;
   font-size: 1rem;
   line-height: 25px;
-  /* margin-left: 5rem; */
   color: #464646;
 }
 
@@ -460,10 +458,6 @@ main {
   opacity: 0.6;
 }
 
-/* .input__padron--texta:focus,
-.input__padron:focus {
-  border: 1px solid #97dffc;
-} */
 
 .input__padron--modificado {
   width: 95.5%;
@@ -731,6 +725,10 @@ textarea {
   border: thin solid #ff0000df;
 }
 
+.banner.night .btn__Enviar {
+  color: #000000;
+}
+
 @media screen and (min-width: 2096px) {
   .contenedor__imagen {
     margin-top: 0rem;
@@ -806,14 +804,14 @@ textarea {
     display: flex;
     flex-direction: column;
   }
-  
-  
+
+
   .contacto__validacion {
     display: flex;
     flex-direction: column;
     width: 105%;
   }
-  
+
 
   .error {
     width: 25%;
@@ -876,6 +874,35 @@ textarea {
 
   .error {
     width: 30%;
+  }
+
+  .btn__Enviar {
+    padding: 10px 30px;
+  }
+
+
+  @keyframes animateRocket {
+
+    0%,
+    5% {
+      transform: rotate(0);
+      left: 0;
+    }
+
+    25% {
+      transform: rotate(45deg);
+      left: 0;
+    }
+
+    50% {
+      transform: rotate(45deg);
+      left: -30px;
+    }
+
+    100% {
+      transform: rotate(45deg);
+      left: calc(100% + 30px);
+    }
   }
 }
 
@@ -1005,6 +1032,10 @@ textarea {
   .error {
     width: 40%;
   }
+
+  .btn__Enviar {
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 882px) {
@@ -1091,15 +1122,11 @@ textarea {
   .error {
     width: 55%;
   }
-}
 
-
-/* @media screen and (max-width: 743px) {
-  .btn__Enviar .icon {
-    margin-top: 0;
+  .btn__Enviar {
+    width: 31.5%;
   }
-
-} */
+}
 
 @media screen and (max-width: 630px) {
   .hobbie__imagen {
@@ -1116,6 +1143,13 @@ textarea {
   .proyecto__info {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+  .contacto__validacion {
+    width: 105%;
   }
 
 }
@@ -1174,6 +1208,12 @@ textarea {
   .letra-alert {
     text-align: center;
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .btn__Enviar {
+    width: 36%;
   }
 }
 
@@ -1279,6 +1319,10 @@ textarea {
   .badges-contenedor {
     font-size: 16px;
   }
+
+  .btn__Enviar {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 410px) {
@@ -1296,7 +1340,7 @@ textarea {
   }
 
   .seccion__clara {
-    font-size: 1.2rem;
+    font-size: 12px;
   }
 }
 
