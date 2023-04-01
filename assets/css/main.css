@@ -491,6 +491,13 @@ textarea {
   outline: none;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
 .container__btn {
   display: flex;
   justify-content: center;
@@ -714,7 +721,7 @@ textarea {
 
 .banner.night .input__padron,
 .banner.night .input__padron--texta {
-  background-color: #000000;
+  background-color: #252526;
   box-shadow: 4px 4px 24px rgba(255, 255, 255, 0.15);
   color: white;
 }
@@ -736,6 +743,17 @@ textarea {
 
 .banner.night .contacto__form [required]:invalid:not(:placeholder-shown) {
   border: thin solid #ff0000df;
+}
+
+.banner.night input:-webkit-autofill,
+.banner.night input:-webkit-autofill:focus, 
+.banner.night input:-webkit-autofill:hover, 
+.banner.night input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #252526 inset !important;
+}
+
+.banner.night input:-webkit-autofill{
+  -webkit-text-fill-color: white !important;
 }
 
 .banner.night .btn__Enviar {
