@@ -34,19 +34,18 @@ function envioFormValidacion() {
     const $btn = document.querySelector('.btn__Enviar'),
       error = document.getElementById('alert');
 
+    $btn.classList.toggle('active');
+
     fetch("https://formsubmit.co/ajax/manuelantoncisneros2020@hotmail.com", {
       method: "POST",
       body: new FormData(e.target)
     })
       .then(res => res.ok ? res.json() : Promise.reject(res))
       .then(json => {
-        $btn.classList.toggle('active');
-        setTimeout(() => {
           $form.reset();
-        }, 500);
         setTimeout(() => {
           $btn.classList.remove('active');
-        }, 3000);
+        }, 2000);
       })
       .catch(err => {
         error.style.visibility = "visible";
