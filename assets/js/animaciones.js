@@ -52,3 +52,86 @@ window.addEventListener('scroll', function () {
   navLinks[currentSectionIndex].classList.add('active');
 });
 
+// Animación del scroll
+window.sr = ScrollReveal();
+sr.reveal('.navbar', {
+  duration: 2000,
+  origin: 'bottom',
+  distance: '-100px',
+});
+
+sr.reveal('.quien ', {
+  duration: 2500,
+  origin: 'left',
+  distance: '1000px',
+});
+
+sr.reveal('.quien__logo ', {
+  duration: 2500,
+  origin: 'right',
+  distance: '1000px',
+});
+
+sr.reveal('.sobre__titulo', {
+  duration: 3500,
+  origin: 'left',
+  distance: '200px',
+});
+
+
+sr.reveal('.sobre__info', {
+  duration: 3500,
+  origin: 'bottom',
+  distance: '200px',
+});
+
+sr.reveal('.skills__titulo ', {
+  duration: 3500,
+  origin: 'left',
+  distance: '200px',
+});
+
+sr.reveal('.skill__item', {
+  duration: 3500,
+  origin: 'bottom',
+  distance: '200px',
+});
+
+sr.reveal('.hobbie__titulo ', {
+  duration: 3500,
+  origin: 'left',
+  distance: '200px',
+});
+
+sr.reveal('.carousel', {
+  duration: 3500,
+  origin: 'bottom',
+  distance: '200px',
+});
+
+sr.reveal('.formacion__titulo', {
+  duration: 3500,
+  origin: 'left',
+  distance: '200px',
+});
+
+sr.reveal('.formacion__item', {
+  duration: 3500,
+  rotate: {
+    x: 1,
+    y: 180,
+  }
+});
+
+sr.reveal('.proyectos__titulo', {
+  duration: 3500,
+  origin: 'left',
+  distance: '200px',
+});
+
+sr.reveal('.proyectos__row', {
+  duration: 3500,
+  origin: 'bottom',
+  distance: '200px',
+});
+
