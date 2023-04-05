@@ -58,7 +58,7 @@ window.sr = ScrollReveal({
 });
 
 sr.reveal('.skills__titulo ', {
-  duration: 100,
+  duration: 1000,
   origin: 'left',
   distance: '200px',
   opacity: 0
