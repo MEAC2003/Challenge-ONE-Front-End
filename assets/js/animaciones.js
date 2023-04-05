@@ -53,8 +53,9 @@ window.addEventListener('scroll', function () {
 });
 
 // Animación del scroll
+
 window.sr = ScrollReveal({
-  reset: true,
+  reset: true
 });
 
 // sr.reveal('.navbar', {
@@ -89,51 +90,59 @@ window.sr = ScrollReveal({
 // });
 
 sr.reveal('.skills__titulo ', {
-  duration: 2000,
+  duration: 100,
   origin: 'left',
-  distance: '200px'
+  distance: '200px',
+  opacity: 0
 });
 
 sr.reveal('.skill__item', {
-  duration: 3000,
+  duration: 1000,
   origin: 'bottom',
-  distance: '200px'
+  distance: '200px',
+  opacity: 0
 });
 
 sr.reveal('.hobbie__titulo ', {
-  duration: 2000,
+  duration: 1000,
   origin: 'left',
-  distance: '200px'
+  distance: '200px',
+  opacity: 0
 });
 
 sr.reveal('.carousel', {
-  duration: 3000,
+  duration: 1000,
   origin: 'bottom',
-  distance: '200px'
+  distance: '200px',
+  opacity: 0
 });
 
 sr.reveal('.formacion__titulo', {
-  duration:2000,
+  duration: 1000,
   origin: 'left',
-  distance: '200px'
+  distance: '200px',
+  opacity: 0
 });
 
 sr.reveal('.formacion__item', {
-  duration: 3000,
+  duration: 1000,
   rotate: {
     x: 1,
     y: 180,
-  }
+  },
+  opacity: 0
 });
 
 sr.reveal('.proyectos__titulo', {
-  duration: 2000,
+  duration: 1000,
   origin: 'left',
-  distance: '200px'
+  distance: '200px',
+  opacity: 0
 });
 
 sr.reveal('.proyectos__row', {
-  duration: 3000,
+  duration: 1000,
   origin: 'bottom',
-  distance: '200px'
+  distance: '200px',
+  opacity: 0
 });
