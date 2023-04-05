@@ -53,41 +53,9 @@ window.addEventListener('scroll', function () {
 });
 
 // Animación del scroll
-
 window.sr = ScrollReveal({
   reset: true
 });
-
-// sr.reveal('.navbar', {
-//   duration: 2000,
-//   origin: 'bottom',
-//   distance: '-100px'
-// });
-
-// sr.reveal('.quien ', {
-//   duration: 2500,
-//   origin: 'left',
-//   distance: '1000px'
-// });
-
-// sr.reveal('.quien__logo ', {
-//   duration: 2500,
-//   origin: 'right',
-//   distance: '1000px'
-// });
-
-// sr.reveal('.sobre__titulo', {
-//   duration: 3500,
-//   origin: 'left',
-//   distance: '200px'
-// });
-
-
-// sr.reveal('.sobre__info', {
-//   duration: 3500,
-//   origin: 'bottom',
-//   distance: '200px'
-// });
 
 sr.reveal('.skills__titulo ', {
   duration: 100,
